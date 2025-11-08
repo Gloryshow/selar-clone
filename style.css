@@ -1,0 +1,100 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+}
+.middle{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+span, a, button:hover{
+    cursor: pointer;
+}
+
+
+#Language{
+    margin-left: 2rem;
+    padding: 1rem;
+    border: 1px solid purple;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    color: purple;
+    margin-left: 2rem;
+}
+nav button{
+    border: none;
+    background-color: purple;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin-left: 2rem;
+}
+.main-container{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+}
+.hand{
+    width: 20rem;
+    height: 20rem;
+}
+.sub-container{
+    border: 1px solid rgb(0, 0, 0,0.1);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    align-content: center;
+    position: relative;
+}
+.menu{
+    display: none;
+}
+.create{
+    display: flex;
+}
+.form1 input{
+    border-radius: 5px;
+    width: 20rem;
+    height: 2rem;
+}
+.form1 a{
+    position: absolute; right: 3.9rem;
+}
+
+
+
+
+
+/* media queries */
+@media(max-width:600px){
+    .hand{
+        display: none;
+    }
+    .sub-container{
+        justify-self: center;
+    }
+    .middle span, .login, button{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu:hover{
+        content: url(images/material-symbols--close.svg);
+    }
+
+   
+
+
+  
+}
