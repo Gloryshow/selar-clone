@@ -42,10 +42,14 @@ nav button{
     margin-top: 3rem;
     margin-left: 2rem;
     display: flex;
+    justify-content: space-around;
+    position: relative;
+    
 }
 .hand{
     width: 20rem;
     height: 20rem;
+    position: absolute; bottom: 0rem; left: 1rem;
 }
 .sub-container{
     border: 1px solid rgb(0, 0, 0,0.1);
@@ -54,7 +58,10 @@ nav button{
     align-items: center;
     width: 30rem;
     align-content: center;
+    padding-bottom: 2rem;
     position: relative;
+    margin-left: 10rem;
+
 }
 .menu{
     display: none;
@@ -66,12 +73,104 @@ nav button{
     border-radius: 5px;
     width: 20rem;
     height: 2rem;
+    border: 1px solid rgb(0, 0, 0,0.2);
 }
 .form1 a{
     position: absolute; right: 3.9rem;
 }
+.login-btn{
+    border: none;
+    background-color: purple;
+    width: 20rem;
+    height: 3rem;
+    color: white;
+    border-radius: 5px;
+}
+.break{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.break div{
+    height: 0.2rem;
+    width: 5rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.or{
+    border: none;
+    align-self: center;
+    background-color: white;
+    
+}
+.or-1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 5px;
 
-
+}
+.or-2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 5px;
+    padding-left: 2.7rem;
+    
+}
+.or-3{
+     display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 5px;
+    padding-left: 2.4rem;
+}
+.cust-sup{
+    width: 4rem;
+    height: 4rem;
+    position: fixed; top: 30rem;
+    right: 1rem;
+}
+.cust-sup:hover{
+    content: url(images/material-symbols--close.svg);
+    background-color: purple;
+    border-radius: 30px;
+}    
+.support-box{
+    width: 22rem;
+    height: 30rem;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 10px;
+    z-index: 100;
+    display: none;
+}
+.support-dropdown:hover .support-box{
+   display: block;
+   position: relative;
+   z-index: 100;
+}
+.sb1{
+    width: 21rem;
+    padding-left: 1rem;
+    background-color: purple;
+    position: absolute; top: 0;
+    border-radius: 5px 5px 0 0 ;
+    color: white;
+    line-height: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}  
 
 
 
@@ -82,8 +181,9 @@ nav button{
     }
     .sub-container{
         justify-self: center;
+        margin-left: 1rem;
     }
-    .middle span, .login, button{
+    .middle span, .login, .start-selling-btn{
         display: none;
     }
     .menu{
@@ -92,7 +192,10 @@ nav button{
     .menu:hover{
         content: url(images/material-symbols--close.svg);
     }
-
+    .support-box{
+        position: absolute;
+        right: 20rem;
+    }
    
 
 
